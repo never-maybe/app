@@ -36,7 +36,7 @@ export class Tab2Page implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.scheduleNotification()
-    }, 5000);
+    }, 3000);
   }
 
   scheduleNotification() {
@@ -50,14 +50,14 @@ export class Tab2Page implements OnInit {
     let navigationExtras: NavigationExtras = {
 
     };
-    this.router.navigate(['/tab1'], navigationExtras);
+    this.router.navigate(['/tab3'], navigationExtras);
   }
 
   openPerguntaWithQueryParams() {
     let navigationExtras: NavigationExtras = {
 
     };
-    this.router.navigate(['/validacao'], navigationExtras);
+    this.router.navigate(['/loading'], navigationExtras);
   }
 
   getAll() {
