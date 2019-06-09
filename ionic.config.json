@@ -1,5 +1,7 @@
 {
   "name": "neverMaybe",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
