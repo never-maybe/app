@@ -13,18 +13,27 @@ export class Tab1Page implements OnInit {
     uploadedFiles: Array<File>;
     isUpload: boolean;
     message_sucess: any
+    img_src:string;
 
     constructor(public processProvider: ProcessProvider, private router: Router) { }
 
     public ngOnInit() {
+        this.img_src = "../../assets/autenticar.gif";
 
+        let self = this;
+        document.getElementById('inputGroupFile01').onchange = function() {
+           self.upload();
+        };
     }
+
+
+    
     fileChange(element) {
         this.isUpload = true;
         this.uploadedFiles = element.target.files;
     }
 
-    verify() {
+    s() {
         this.processProvider.verify()
             .subscribe(res => {
                 let response = res as any;
@@ -50,6 +59,7 @@ export class Tab1Page implements OnInit {
 
 
     upload() {
+        this.img_src = "../../assets/loading.gif";
         let formData = new FormData();
         for (var i = 0; i < this.uploadedFiles.length; i++) {
             formData.append("uploads[]", this.uploadedFiles[i], this.uploadedFiles[i].name);
@@ -58,7 +68,7 @@ export class Tab1Page implements OnInit {
         this.processProvider.uploadDocument(formData)
             .subscribe(res => {
                 console.log('upload feito')
-                this.verify();
+                this.s();
             }, err => {
                 console.log(err);
             })

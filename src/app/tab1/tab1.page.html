@@ -1,16 +1,26 @@
 <ion-content>
-   <ion-input (change)="fileChange($event)" type="file" class="custom-file-input" id="inputGroupFile01"
-    aria-describedby="inputGroupFileAddon01" multiple></ion-input> 
+
+
+  <ion-input type="button" class="btn_home" (click)="home()"></ion-input>
+  <section>
+    <div>
+      <ion-img [src]="img_src" class="img_home" id="img_home"></ion-img>
+    </div>
+    <div class="file_wrap"><ion-input (change)="fileChange($event)" type="file"
+        class="button_upload" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" multiple></ion-input></div>
+  </section>
+
+  <!-- <ion-input (change)="fileChange($event)" type="file" class="custom-file-input" id="inputGroupFile01"
+    aria-describedby="inputGroupFileAddon01" multiple></ion-input>
 
   <div class="container-img">
-      <ion-img class="theImage" src="../../assets/autenticar.gif">
-    
-      </ion-img>
-    <ion-button class="button_upload" value="UPLOAD" (click)="upload()">UPLOAD</ion-button>
-    <ion-button class="button_verify" value="VERIFY" (click)="verify()">VERIFY</ion-button> 
-  </div>
+    <ion-img class="theImage" src="../../assets/autenticar.gif">
 
-  
+    </ion-img>
+    <ion-button class="button_upload" value="UPLOAD" (click)="upload()">UPLOAD</ion-button>
+  </div> -->
+
+
 
 
 

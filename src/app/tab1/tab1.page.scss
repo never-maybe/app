@@ -34,3 +34,36 @@ right: 50px;
   width: 100%;
   position: relative;
 }
+
+
+.img_home {
+  width: 100%;
+}
+
+section div:first-child {
+  width: 100%;
+  position: relative;
+}
+
+section div:last-child {
+  width: 120px;
+  height: 50px;
+  position: relative;
+  margin-top:  -140px;
+  margin-left: 230px;
+}
+
+.button_upload {
+  background: #121232;
+  background-color: Transparent;
+  width: 100px;
+  height: 130px;
+  position: relative;
+  margin-top:  -180px;
+}
+
+
+.file_wrap input{
+ 
+  cursor:pointer;
+}
