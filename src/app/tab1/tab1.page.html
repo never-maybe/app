@@ -1,17 +1,17 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      TAb ONE
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-input (change)="fileChange($event)" type="file" class="custom-file-input" id="inputGroupFile01"
-    aria-describedby="inputGroupFileAddon01" multiple></ion-input>
+   <ion-input (change)="fileChange($event)" type="file" class="custom-file-input" id="inputGroupFile01"
+    aria-describedby="inputGroupFileAddon01" multiple></ion-input> 
 
-    <span class="uk-link">selecting one</span>
+  <div class="container-img">
+      <ion-img class="theImage" src="../../assets/autenticar.gif">
+    
+      </ion-img>
+    <ion-button class="button_upload" value="UPLOAD" (click)="upload()">UPLOAD</ion-button>
+    <ion-button class="button_verify" value="VERIFY" (click)="verify()">VERIFY</ion-button> 
+  </div>
 
-    <ion-button value="UPLOAD" (click)="upload()">UPLOAD</ion-button>
-    <ion-button value="VERIFY" (click)="verify()">VERIFY</ion-button>
+  
+
+
+
 </ion-content>

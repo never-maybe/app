@@ -8,7 +8,7 @@ export class ProcessProvider {
     constructor(public http: HttpClient) { }
 
     private headers = new HttpHeaders().set('Content-Type', 'application/json');
-    private processURL = "http://nevermaybe.mybluemix.net";
+    private processURL = "https://nevermaybe.mybluemix.net";
 
 
     verify(): Observable<Object> {
@@ -24,6 +24,5 @@ export class ProcessProvider {
                 (res => res)
             );
     }
-
     
 }
